@@ -171,13 +171,6 @@ def Main():
 		RXB()
 	if opt in ["B","2"]:
 		admin()
-	if opt in ["C","3"]:
-		os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi);time.sleep(1)
-		fb()
-	if opt in ["D","4"]:
-		os.system('xdg-open https://facebook.com/ruhul.xmin);time.sleep(1)
-		group()
-	if opt in ["0","0"]:
 		exit()
 		
 	else:
