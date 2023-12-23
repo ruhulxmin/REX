@@ -158,19 +158,28 @@ def cek_apk(session,coki):
 		for i in range(len(game)):
 			print("%s%s. %s%s"%(K,i+1,game[i].replace("Expired"," Expired"),N))
 def Main():
+	import os
 	os.system('clear')
 	print(logo)
 	print("[\033[1;37m01\33[1;92m][\033[1;93mA\33[1;92m] START RANDOM CLONING")
-	print("[\033[1;37m02\33[1;92m][\033[1;93mB\33[1;92m] JOIN MY FACEBOOK GROUP")
-	print("[\033[1;37m03\33[1;92m][\033[1;93mC\33[1;92m] CONTACT ME ON FB")
+	print("[\033[1;37m02\33[1;92m][\033[1;93mB\33[1;92m] CONTACT ME ON FB")
+	print("[\033[1;37m03\33[1;92m][\033[1;93mC\33[1;92m] SECOUND FACEBOOK ACCOUNT")
 	print("[\033[1;37m04\33[1;92m][\033[1;93mD\33[1;92m] MY WHATSAPP")
-	print('[\033[1;37m00\33[1;92m][\033[1;93mE\33[1;92m] EXIT TOOL')
+	print('[\033[1;37m00\33[1;92m][\033[1;93mE\33[1;92m] EXIT PROGRAMMING')
 	print(54*'━')
 	opt = input('Choose option >>> ')
 	if opt in ["A","1"]:
 		RXB()
 	if opt in ["B","2"]:
+		import os; import time; os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi'); time.sleep(1)
 		admin()
+	if opt in ["C","3"]:
+		import os; import time; os.system('xdg-open https://facebook.com/ruhul.xmin'); time.sleep(1)
+		fb()
+	if opt in ["D","4"]:
+		import os; import time; os.system('xdg-open https://wa.me/qr/ONUXWDHJWYSUD1'); time.sleep(1)
+		fb2()
+	if opt in ["0","0"]:
 		exit()
 		
 	else:
@@ -180,10 +189,15 @@ def admin():
 	os.system('clear')
 	print(logo)
 	print(50*'_')
-	print(' [2] FOLLOW MY FACEBOOK PROFILE')
+	print(' [1] FOLLOW MY FACEBOOK PROFILE')
+	print('[2] FOLLOW SECOND FACEBOOK PROFILE')
 	print(' [0] Back to Main menu')
 	bal = input('Choose option >>> ')
 	if bal =='1':
+		import os; import time; os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi'); time.sleep(1)
+		admin()
+	if bal =='2':
+		import os; import time; os.system('xdg-open https://facebook.com/ruhul.xmin'); time.sleep(1)
 		admin()
 	if bal =='0':
 		Main()
