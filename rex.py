@@ -142,6 +142,12 @@ def menu():
                                         plist.append('first@#')
                                         plist.append('First Last')
                                         plist.append('@first')
+
+plist.append('@first@')
+
+plist.append('@last@')
+
+plist.append('first12')
                                         plist.append('@last')
                                         plist.append('first123')
                                 else:
